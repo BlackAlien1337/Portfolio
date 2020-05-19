@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-image: url(hardware-accelerated.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Card{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border:1px black solid;
+	padding: 20px;
+	box-shadow: 35px 35px 45px black;
+	height: auto;
+	width: 700px;
+	background: url(b9c8f893c9a782033a01f47e0c0b1d6e.jpg) no-repeat;
+	background-size: cover;
+
+}
+.logo{
+width: 150px;
+height: 150px;
+left: 50%;
+transform: translate(-50%,0%);
+/*margin: 0 0 0 280px;*/
+position: relative;
+}
+.heading{
+	text-align: center;
+	margin-top: 10px;
+	font-family: sans-serif;
+	text-shadow: 2px 2px 4px #000000;
+	font-size: 20px;
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+p{
+	font-family:monospace;
+	text-align: justify;
+	font-size: 15px;
+	color:black;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+.icons{
+	text-align: center;
+	width: 680px;
+	height: auto;
+	background-color: #e74c3c;
+	padding: 10px;
+	border-radius: 25px;	
+}
+.icons i{
+	width: 50px;
+	font-size: 25px
+}
+@media screen and (max-width: 750px) {
+	.Card{
+		width: 70%;
+	}
+	.icons{
+		width: 95%;
+	}
+}

@@ -1,81 +1,118 @@
-body {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	min-height: 100vh;
-	justify-content: center;
-	align-items: center;
-	background-image: url(hardware-accelerated.gif);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.Card{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	border:1px black solid;
-	padding: 20px;
-	box-shadow: 35px 35px 45px black;
-	height: auto;
-	width: 700px;
-	background: url(b9c8f893c9a782033a01f47e0c0b1d6e.jpg) no-repeat;
-	background-size: cover;
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  font-family:;
+  height: 100vh;
+  text-decoration: none;
+  background-image: linear-gradient(125deg,#2d3436,#ecf0f1,#2c3e50);
+  background-size: 400%;
+  animation: bganimation 13s infinite;
 
 }
-.logo{
-width: 150px;
-height: 150px;
-left: 50%;
-transform: translate(-50%,0%);
-/*margin: 0 0 0 280px;*/
-position: relative;
+@keyframes bganimation {
+0%{
+  background-position: 0% 50%;
 }
-.heading{
-	text-align: center;
-	margin-top: 10px;
-	font-family: sans-serif;
-	text-shadow: 2px 2px 4px #000000;
-	font-size: 20px;
-	color: white;
-	font-weight: 700;
-	text-transform: uppercase;
+50%{
+  background-position: 100% 50%;
 }
-p{
-	font-family:monospace;
-	text-align: justify;
-	font-size: 15px;
-	color:black;
-	font-weight: bolder;
-	text-transform: uppercase;
+100%{
+  background-position: 0% 50%;
 }
-.icons{
-	text-align: center;
-	width: 680px;
-	height: auto;
-	background-color: #e74c3c;
-	padding: 10px;
-	border-radius: 25px;	
 }
-.icons i{
-	width: 50px;
-	font-size: 25px
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 500px;
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(250deg,#2d3436,#1abc9c,#34495e);
+  animation: animate 13s infinite;
+  background-size: 500%;
+  padding: 60px;
+  border-radius: 20px;
+  border: #15f4ee solid 2px;
+    }
+.container:hover {
+  transition: 1s;
+  box-shadow: 0 5px 50px #15f4ee inset, 0 5px 50px #15f4ee,
+             0 5px 50px #15f4ee inset, 0 5px 50px #15f4ee;
 }
-a{
-	color: black;
-	text-decoration: none;
-	cursor: pointer;
+@keyframes animate  {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
 }
-a:hover{
-	color: white;
+
+.container img{
+  height: 200px;
+  width: 200px;
+  margin-left: 80px;
+   border-radius: 50%;
+   border:  #15f4ee 2px solid;
+
 }
-@media screen and (max-width: 750px) {
-	.Card{
-		width: 70%;
-	}
-	.icons{
-		width: 95%;
-	}
+.container img:hover {
+  transition: 1s;
+  box-shadow: 0 5px 50px #15f4ee inset, 0 5px 50px #15f4ee,
+             0 5px 50px #15f4ee inset, 0 5px 50px #15f4ee;
+}
+
+.container h1{
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Balsamiq Sans', cursive;
+  font-weight: 700;
+}
+.container p{
+  font-size: 20px;
+  word-spacing: 2px;
+  color: black;
+ font-family: 'Balsamiq Sans';
+}
+.container h2{
+  font-family:monospace;
+  font-size: 20px;
+}
+.icons {
+  text-align: center;
+}
+.icons a{
+  padding: 10px;
+  color: black;
+  font-size: 30px;
+  margin-left: 20px;
+
+}
+
+h2{
+  text-align: center;
+}
+.fa-facebook-f:hover{
+  color: #2c3e50;
+  transition: 1s;
+}
+.fa-github:hover{
+  color: black;
+    transition: 1s;
+}
+.fa-twitter:hover{
+  color:#3498db;
+    transition: 1s;
+}
+.fa-instagram:hover{
+  color: #9b59b6;
+    transition: 1s;
+}
+.fa-youtube-play:hover{
+    transition: 1s;
+color: red;
 }
